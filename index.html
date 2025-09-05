@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charlie Emanuel Daga-as | Portfolio</title>
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a; /* dark navy */
+      color: #e2e8f0; /* light gray text */
+      line-height: 1.6;
+    }
+
+    a {
+      color: #38bdf8; /* cyan accent */
+      text-decoration: none;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 5%;
+      background: #1e293b;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      color: #38bdf8;
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 2rem;
+      padding: 2rem 5%;
+    }
+
+    /* Sidebar/Profile */
+    .sidebar {
+      background: #1e293b;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      margin-bottom: 1rem;
+      border: 3px solid #38bdf8;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar:hover, .sidebar img:hover {
+      box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
+      transform: translateY(-5px);
+    }
+
+    .sidebar h1 {
+      margin-bottom: 0.5rem;
+      color: #38bdf8;
+    }
+
+    .sidebar p {
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-weight: bold;
+      background: #38bdf8;
+      color: #0f172a;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+      box-shadow: 0 6px 20px rgba(14, 165, 233, 0.4);
+      transform: translateY(-3px);
+    }
+
+    /* Main content */
+    .main {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    section {
+      background: #1e293b;
+      padding: 2rem;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+
+    section:hover {
+      box-shadow: 0 6px 20px rgba(56, 189, 248, 0.2);
+      transform: translateY(-3px);
+    }
+
+    section h3 {
+      margin-bottom: 1rem;
+      color: #38bdf8;
+    }
+
+    .services, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #0f172a;
+      padding: 1rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 20px rgba(56, 189, 248, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 60%;
+      border-radius: 8px;
+      margin-bottom: 0.8rem;
+      transition: all 0.3s ease;
+    }
+
+    .card img:hover {
+      transform: scale(1.03);
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact-form input, .contact-form textarea {
+      padding: 0.8rem;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      background: #0f172a;
+      color: #e2e8f0;
+      transition: all 0.3s ease;
+    }
+
+    .contact-form input:focus, .contact-form textarea:focus {
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+    }
+
+    .contact-form button {
+      padding: 0.8rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      background: #38bdf8;
+      color: #0f172a;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #0ea5e9;
+      box-shadow: 0 6px 20px rgba(14, 165, 233, 0.4);
+      transform: translateY(-3px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+      background: #1e293b;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>CED</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img src="images/pic2.jpg" alt="Charlie Emanuel Daga-as">
+      <h1>Charlie Emanuel Daga-as</h1>
+      <p>Content Creator • Copywriter • IT Support • Web Designer • Programmer</p>
+      <a href="document/resume.pdf" class="btn">Download CV</a>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <!-- About -->
+      <section id="about">
+        <h3>About Me</h3>
+        <p>
+          I’m Charlie, a content strategist and copywriter with experience working with startups and e-commerce brands. I write with a focus on clarity, conversion and measurable results — not just pretty words. I prefer to keep projects lean, test fast, and iterate based on data.
+        </p>
+      </section>
+
+      <!-- Services -->
+      <section id="services">
+        <h3>Services</h3>
+        <div class="services">
+          <div class="card">
+            <h4>Content Strategy</h4>
+            <p>Audit, content calendar, audience research, and conversion-focused editorial planning.</p>
+          </div>
+          <div class="card">
+            <h4>Copywriting</h4>
+            <p>Landing pages, product descriptions, email sequences and ad copy tailored to ROI.</p>
+          </div>
+          <div class="card">
+            <h4>Social & Growth</h4>
+            <p>Short form content, repurposing, A/B testing, and caption frameworks that scale.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio">
+        <h3>Portfolio</h3>
+        <div class="portfolio">
+          <div class="card">
+            <img src="images/e-commerce.png" alt="Project 1">
+            <h4>Web Design</h4>
+            <p>Landing page design for a modern brand</p>
+          </div>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="Project 2">
+            <h4>Product Launch</h4>
+            <p>Positioning, GTM messaging, launch emails</p>
+          </div>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="Project 3">
+            <h4>Case Study — Retail</h4>
+            <p>Product pages, UX copy, CRO test</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact-form">
+        <h3>Contact Me</h3>
+        <form action="https://formspree.io/f/mblapyeg" method="POST">
+          <!--<input type="text" name="_gotcha" style="display:none">-->
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+          <textarea name="message" rows="5" placeholder="Your message..." required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Charlie Emanuel Daga-as |<a href="https://github.com/charlieemanuel"> Find me on Github </a>| All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
