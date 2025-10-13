@@ -44,7 +44,9 @@ const Navbar = () => {
                     <a href="#" className="text-white text-sm hover:text-[gray] transition-all duration-300 m-8">PROJECTS</a>
                     <a href="#" className="text-white text-sm hover:text-[gray] transition-all duration-300 m-8">CONTACT</a>
                     <hr className="border-[gray] w-[80%] m-8"/>
-                    <a href="#" className="px-10 py-2 font-bold border-2 border-[gray] text-[gray] rounded-lg bg-gradient-to-t hover:from-[#a5a9b4] hover:to-[#0a0a0a] transition-all duration-300 m-8">HIRE ME</a>
+                    <button className="px-10 py-2 font-bold border-2 border-[gray] text-[gray] rounded-lg bg-gradient-to-t hover:from-[#a5a9b4] hover:to-[#0a0a0a] transition-all duration-300 m-8" onClick={handleNav}>
+                        <a href="#">HIRE ME</a>
+                    </button>
                 </div>
             </nav>
         </header>
