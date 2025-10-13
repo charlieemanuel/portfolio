@@ -22,7 +22,7 @@ body {
 }
 
 @media (max-width: 420px) {
-  #hero-image {
+  .hero-image {
     background-image: url();
   }
   #hero-profile {
