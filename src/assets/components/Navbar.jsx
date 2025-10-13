@@ -14,7 +14,7 @@ const Navbar = () => {
 
                 {/* logo */}
                 <div>
-                <a href="#" className="text-[gray] text-3xl font-bold tracking-wide">cm<span className="text-white">l</span>.</a>
+                <a href="#" className="text-[gray] text-3xl font-bold tracking-tighter">cm<span className="text-white">l</span>.</a>
                 </div>
 
                 {/* nav menus */}

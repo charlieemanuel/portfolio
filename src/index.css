@@ -11,6 +11,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  scroll-behavior: smooth;
 }
 
 #hero-image {
@@ -57,5 +58,7 @@ h3, p, a {
   .hero-shadow {
     text-shadow: -1px 3px 1px #a6a6a6
   }
+  
+
 
 }
