@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100dvw;
+  overflow-x: hidden;
+  height: 100%;
+  background-image: url(./assets/images/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#hero-image {
+  background-image: url(./assets/images/hero-profile.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 420px) {
+  #hero-image {
+    background-image: url();
+  }
+  #hero-profile {
+    display: block;
+  }
+}
+
+h1, h2 {
+  font-family: 'Epilogue', sans-serif;
+}
+
+h3, p, a {
+  font-family: 'Nunito', sans-serif;
+}
+
+@layer utilities {
+  .nav-height {
+    @apply h-[calc(100vh-81px)]
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center
+  }
+
+  .common-padding {
+    @apply sm:py-32 py-20 sm:px-10 px-5
+  }
+
+  .hero-title {
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold
+  }
+
+  .hero-shadow {
+    text-shadow: -3px 6px 1px #2e2e2e
+  }
+
+}
