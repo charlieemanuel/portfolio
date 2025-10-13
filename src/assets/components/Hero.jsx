@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section id='hero-image'>
         <div className="flex flex-col justify-end items-center pb-10 min-h-[calc(100vh-80px)] text-center px-4 py-5">
-            <div className='mb-7 bg-[#151616]/90 border-4 border-black rounded-2xl hidden' id='hero-profile'>
+            <div className='mb-7 bg-[gray]/20 backdrop-blur-[1px] border-4 border-[gray] rounded-4xl hidden' id='hero-profile'>
                 <img src={Image} alt="Profile" />
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-[gray] tracking-tight hero-shadow mb-3">Charlie Emanuel Daga-as
