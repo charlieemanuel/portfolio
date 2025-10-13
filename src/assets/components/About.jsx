@@ -2,7 +2,7 @@
 
 const About = () => {
   return (
-    <section className="about-section p-8 bg-gradient-to-b from-[#a5a9b4]/50 to-[#0a0a0a]/50">
+    <section className="about-section p-8 bg-gradient-to-b from-[#a5a9b4]/50 to-[#0a0a0a]/50" id="about">
         <div className="flex flex-col justify-center items-center">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#0a0a0a] hero-shadow mt-7 mb-8">
                 About Me

@@ -14,7 +14,7 @@ body {
   scroll-behavior: smooth;
 }
 
-#hero-image {
+.hero-image {
   background-image: url(./assets/images/hero-profile.png);
   background-position: center;
   background-size: contain;

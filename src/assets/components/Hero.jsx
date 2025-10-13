@@ -3,7 +3,7 @@ import Image from '../images/hero-profile.png';
 
 const Hero = () => {
   return (
-    <section id='hero-image'>
+    <section className='hero-image' id='home'>
         <div className="flex flex-col justify-end items-center pb-10 min-h-[calc(100vh-80px)] text-center px-4 py-5">
             <div className='mb-7 bg-[gray]/20 backdrop-blur-[1px] border-4 border-[gray] rounded-4xl hidden' id='hero-profile'>
                 <img src={Image} alt="Profile" />
