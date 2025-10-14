@@ -1,4 +1,6 @@
-
+import Design from '../images/design.jpg'
+import Code from '../images/code.jpg'
+import Chill from '../images/chill.jpg'
 
 const About = () => {
   return (
@@ -11,19 +13,13 @@ const About = () => {
                 I’m a UI/UX Designer and Web Developer who loves turning ideas into interactive, visually engaging websites. With a strong eye for design and a passion for user experience, I blend creativity and logic to craft digital products that feel as good as they look. Whether it’s designing intuitive interfaces or coding responsive layouts, I’m dedicated to delivering high-quality work that meets both user needs and business goals. Let’s create something amazing together!
             </p>
         </div>
-        <div className="flex justify-evenly items-center text-white mt-8">
-            <div className="bg-white/50 text-[#0a0a0a] text-xl font-bold p-4 rounded-xl">
-                <img src="" alt="" />
-                <p>Design</p>
-            </div >
-            <div className="bg-white/50 text-[#0a0a0a] text-xl font-bold p-4 rounded-xl">
-                <img src="" alt="" />
-                <p>Code</p>
+        <div className="flex flex-col md:flex-row max-md:space-y-5 justify-center items-center mt-8">
+            <div className="text-xl font-bold p-4 rounded-xl max-w-[720px] h-[600px]">
+                <img src={Design} alt="Picture" className='rounded-xl w-full h-full' />
             </div>
-        </div>
-        <div className="flex justify-center items-center bg-white/50 text-[#0a0a0a] text-xl font-bold mt-8 p-4 rounded-xl">
-            <img src="" alt="" />
-            <p>Rest</p>
+            <div className="text-xl font-bold p-4 rounded-xl max-w-[720px] h-[600px]">
+                <img src={Code} alt="Picture"  className='rounded-xl w-full h-full' />
+            </div >
         </div>
     </section>
   )
