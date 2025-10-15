@@ -14,11 +14,17 @@ const About = () => {
             </p>
         </div>
         <div className="flex flex-col md:flex-row max-md:space-y-5 justify-center items-center mt-8">
-            <div className="text-xl font-bold p-4 rounded-xl max-w-[720px] h-[600px]">
-                <img src={Design} alt="Picture" className='rounded-xl w-full h-full' />
+            <div className="flex flex-col justify-center items-center text-xl text-white font-bold p-4 rounded-xl max-w-[720px] h-[420px]">
+                <img src={Design} alt="Picture" className='rounded-xl w-full h-full mb-2' />
+                <p>Design!</p>
             </div>
-            <div className="text-xl font-bold p-4 rounded-xl max-w-[720px] h-[600px]">
-                <img src={Code} alt="Picture"  className='rounded-xl w-full h-full' />
+            <div className="flex flex-col justify-center items-center text-xl text-white font-bold p-4 rounded-xl max-w-[720px] h-[420px]">
+                <img src={Code} alt="Picture"  className='rounded-xl w-full h-full mb-2' />
+                <p>Code!</p>
+            </div >
+            <div className="flex flex-col justify-center items-center text-xl text-white font-bold p-4 rounded-xl max-w-[720px] h-[420px]">
+                <img src={Chill} alt="Picture"  className='rounded-xl w-full h-full mb-2' />
+                <p>Chill!</p>
             </div >
         </div>
     </section>
