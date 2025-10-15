@@ -1,4 +1,4 @@
-import Design from '../images/design.jpg'
+import Design from '../images/design.jpg'  
 import Code from '../images/code.jpg'
 import Chill from '../images/chill.jpg'
 

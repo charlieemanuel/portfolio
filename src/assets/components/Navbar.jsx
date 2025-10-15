@@ -19,7 +19,7 @@ const Navbar = () => {
 
                 {/* nav menus */}
                 <div className="text-white space-x-6 lg:space-x-8 text-sm md:flex hidden tracking-wide">
-                    <a href="#home" className="hover:text-[gray] transition-all duration-300">HOME</a>
+                    <a href="#" className="hover:text-[gray] transition-all duration-300">HOME</a>
                     <a href="#about" className="hover:text-[gray] transition-all duration-300">ABOUT</a>
                     <a href="#skills" className="hover:text-[gray] transition-all duration-300">SKILLS</a>
                     <a href="#projects" className="hover:text-[gray] transition-all duration-300">PROJECTS</a>
@@ -39,7 +39,7 @@ const Navbar = () => {
                 {/* mobile menu */}
                 <div className={isOpen ? "absolute top-0 left-0 w-[100vw] h-screen bg-black/90 flex flex-col justify-center items-center ease-in duration-300 md:hidden" : "absolute top-0 left-[-100%] opacity-0 w-full h-screen bg-black/5 flex flex-col justify-center items-center ease-in duration-300 md:hidden"}>
                     <button className='m-8' onClick={handleNav}>
-                        <a href="#home" className="text-white text-sm hover:text-[gray] transition-all duration-300 ">HOME</a>
+                        <a href="#" className="text-white text-sm hover:text-[gray] transition-all duration-300 ">HOME</a>
                     </button>
                     <button className='m-8' onClick={handleNav}>
                         <a href="#about" className="text-white text-sm hover:text-[gray] transition-all duration-300 ">ABOUT</a>
