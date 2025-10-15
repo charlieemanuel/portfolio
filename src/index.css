@@ -5,7 +5,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   width: 100dvw;
-  overflow: hidden;
+  overflow-x: hidden;
   height: 100%;
   background-image: url(./assets/images/hero-bg.jpg);
   background-position: center;
@@ -23,7 +23,7 @@ body {
 
 @media (max-width: 420px) {
   .hero-image {
-    background-image: url();
+    background-image: none;
   }
   #hero-profile {
     display: block;
