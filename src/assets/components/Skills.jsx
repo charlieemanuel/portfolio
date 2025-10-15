@@ -15,7 +15,7 @@ const Skills = () => {
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#6e6e6e] hero-shadow mt-7 mb-2">My Toolkit</h2>
             <p className="text-2xl text-gray-400 font-bold">From sleek front-end builds to dynamic animations, I use modern tools like:</p>
         </div>
-        <div className='flex justify-evenly items-center mt-20'>
+        <div className='flex flex-col justify-evenly items-center mt-20'>
             <img src={JSlogo} alt="react logo" width={70}  />
             <img src={HTMLlogo} alt="react logo" width={60}  />
             <img src={CSSlogo} alt="react logo" width={60}  />
