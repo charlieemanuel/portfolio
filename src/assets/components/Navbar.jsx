@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 
 const Navbar = () => {
-    const [isOpen, seIsOpen] =useState(false);
+    const [isOpen, seIsOpen] = useState(false);
     const handleNav = () => {
         seIsOpen(!isOpen);
     }
