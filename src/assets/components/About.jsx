@@ -9,20 +9,20 @@ const About = () => {
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#0a0a0a] hero-shadow mt-7 mb-8">
                 About Me
             </h2>
-            <p className="text-center text-base text-white max-w-4xl px-8 py-6 rounded-xl leading-relaxed bg-[#0a0a0a]/75">
+            <p className="text-center text-base text-white max-w-4xl px-8 py-6 rounded-xl leading-relaxed bg-[#0a0a0a]/75 hover:scale-105 hover:shadow-md hover:shadow-gray-400/70 transition-all duration-300">
                 I’m a UI/UX Designer and Web Developer who loves turning ideas into interactive, visually engaging websites. With a strong eye for design and a passion for user experience, I blend creativity and logic to craft digital products that feel as good as they look. Whether it’s designing intuitive interfaces or coding responsive layouts, I’m dedicated to delivering high-quality work that meets both user needs and business goals. Let’s create something amazing together!
             </p>
         </div>
-        <div className="flex flex-col md:flex-row max-md:space-y-12 justify-center items-center mt-8">
-            <div className="flex flex-col justify-center items-center text-xl text-white font-bold p-4 rounded-xl max-w-[720px] h-[420px]">
+        <div className="flex flex-col md:flex-row max-md:space-y-12 justify-around items-center mt-8">
+            <div className="flex flex-col justify-center items-center text-xl text-white font-bold rounded-xl max-w-[280px] h-full p-4 bg-gray-400/20 hover:scale-105 hover:shadow-md hover:shadow-gray-400/70 transition-all duration-300">
                 <img src={Design} alt="Picture" className='rounded-xl w-full h-full mb-4' />
                 <p>Design!</p>
             </div>
-            <div className="flex flex-col justify-center items-center text-xl text-white font-bold p-4 rounded-xl max-w-[720px] h-[420px]">
+            <div className="flex flex-col justify-center items-center text-xl text-white font-bold rounded-xl max-w-[280px] h-full p-4 bg-gray-400/20 hover:scale-105 hover:shadow-md hover:shadow-gray-400/70 transition-all duration-300">
                 <img src={Code} alt="Picture"  className='rounded-xl w-full h-full mb-4' />
                 <p>Code!</p>
             </div >
-            <div className="flex flex-col justify-center items-center text-xl text-white font-bold p-4 rounded-xl max-w-[720px] h-[420px]">
+            <div className="flex flex-col justify-center items-center text-xl text-white font-bold rounded-xl max-w-[280px] h-full p-4 bg-gray-400/20 hover:scale-105 hover:shadow-md hover:shadow-gray-400/70 transition-all duration-300">
                 <img src={Chill} alt="Picture"  className='rounded-xl w-full h-full mb-4' />
                 <p>Chill!</p>
             </div >

@@ -14,7 +14,7 @@ const Hero = () => {
                 UI/UX Designer <span className='text-[gray] text-2xl md:text-4xl font-bold'>+</span> Developer
             </h2>
             <p className="text-base text-white max-w-2xl leading-relaxed">
-                I'm a passionate UI/UX designer and developer dedicated to crafting visually stunning and user-friendly digital experiences. With a keen eye for detail and a commitment to excellence, I bring ideas to life through innovative design and seamless functionality.
+                I'm a passionate UI/UX designer and developer dedicated to crafting visually stunning and user-friendly digital experiences.
             </p>
             <div className='flex flex-col sm:flex-row justify-center items-cente mt-1'>
             <button>
