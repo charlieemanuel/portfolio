@@ -1,5 +1,7 @@
 import { HiOutlineX, HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { useState } from 'react';
+import {useGSAP} from "@gsap/react";
+import  gsap from "gsap";
 
 
 const Navbar = () => {
@@ -8,26 +10,59 @@ const Navbar = () => {
         seIsOpen(!isOpen);
     }
 
+    useGSAP(() => {
+      gsap.fromTo('.logo', {
+        x: -100,
+        opacity: 0,
+      }, {
+        x: 0,
+        opacity: 1,
+        ease: 'power1.in',
+        duration: 1,
+      })
+
+      gsap.fromTo('.nav-menu', {
+        y: -200,
+        opacity: 0,
+      }, {
+        y: 0,
+        opacity: 1,
+        ease: 'power1',
+        duration: 1,
+        stagger: 0.1,
+      })
+
+      gsap.fromTo('.lg-nav-button', {
+        x: 100,
+        opacity: 0,
+      }, {
+        x: 0,
+        opacity: 1,
+        ease: 'power1.in',
+        duration: 1,
+      })
+    })
+
     return (
-        <header className="w-full h-20 px-10 flex-center backdrop-blur-[1px] sticky top-0 z-50">
+        <header className="w-full h-20 px-10 flex-center bg-gray-300/5 backdrop-blur-[2px] sticky top-0 z-50">
             <nav className="flex justify-between items-center w-full">
 
                 {/* logo */}
-                <div>
+                <div className='flex justify-center items-center border-white rounded-full py-4 px-2 logo'>
                 <a href="#" className="text-[gray] text-3xl font-bold tracking-tighter">cm<span className="text-white">l</span>.</a>
                 </div>
 
                 {/* nav menus */}
                 <div className="text-white space-x-6 lg:space-x-8 text-sm md:flex hidden tracking-wide">
-                    <a href="#" className="hover:text-[gray] transition-all duration-300">HOME</a>
-                    <a href="#about" className="hover:text-[gray] transition-all duration-300">ABOUT</a>
-                    <a href="#skills" className="hover:text-[gray] transition-all duration-300">SKILLS</a>
-                    <a href="#projects" className="hover:text-[gray] transition-all duration-300">PROJECTS</a>
-                    <a href="#contact" className="hover:text-[gray] transition-all duration-300">CONTACT</a>
+                    <a href="#" className="hover:text-[gray] transition-all duration-300 nav-menu">HOME</a>
+                    <a href="#about" className="hover:text-[gray] transition-all duration-300 nav-menu">ABOUT</a>
+                    <a href="#skills" className="hover:text-[gray] transition-all duration-300 nav-menu">SKILLS</a>
+                    <a href="#projects" className="hover:text-[gray] transition-all duration-300 nav-menu">PROJECTS</a>
+                    <a href="#contact" className="hover:text-[gray] transition-all duration-300 nav-menu">CONTACT</a>
                 </div>
 
                 {/* hire me btn */}
-                <div className='md:flex hidden'>
+                <div className='md:flex hidden lg-nav-button'>
                     <a href="#" className="px-10 py-2 text-base bg-gradient-to-t from-[#a5a9b4] to-[#0a0a0a] text-white font-bold border-2 border-[gray] rounded-lg flex items-center space-x-2 hover:from-[#0a0a0a00] hover:to-[#a5a9b400] hover:text-[gray] hover:border-2 hover:border-[gray] hover:scale-105 transition-all duration-300">Hire Me</a>
                 </div>
 

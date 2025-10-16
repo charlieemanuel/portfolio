@@ -24,7 +24,7 @@ const Skills = () => {
         })
     })
   return (
-    <section className="flex flex-col flex-wrap py-20 px-6" id="skills">
+    <section className="flex flex-col py-20 px-6" id="skills">
         <div className='flex flex-col flex-wrap'>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#6e6e6e] hero-shadow mt-7 mb-2">My Toolkit</h2>
             <p className="text-xl text-gray-400 font-bold">From sleek front-end builds to dynamic animations, I use modern tools like:</p>

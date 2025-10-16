@@ -1,7 +1,22 @@
 import { BiDownload, BiPlay } from 'react-icons/bi';
 import Image from '../images/hero-profile.png';
+import {useGSAP} from "@gsap/react";
+import gsap from "gsap";
 
 const Hero = () => {
+  useGSAP(() => {
+    gsap.fromTo('.hero-image', {
+      scale: 0,
+      opacity: 0,
+    }, {
+      scale: 1,
+      opacity: 1,
+      duration: 1,
+      ease: 'power1.inOut',
+    })
+
+  })
+
   return (
     <section className='hero-image' id='home'>
         <div className="flex flex-col justify-end items-center pb-10 min-h-[calc(100vh-80px)] text-center px-4 py-5">
