@@ -20,7 +20,7 @@ const Skills = () => {
             duration: 20,
             repeat: -1,
             yoyo: true,
-            ease: "power",
+            ease: "none",
         })
     })
   return (
