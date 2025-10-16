@@ -14,10 +14,10 @@ const Skills = () => {
     useGSAP(() => {
 
         gsap.fromTo('.logo-list', {
-            xPercent: -35,
+            xPercent: -39,
         }, {
-            xPercent: 45,
-            duration: 15,
+            xPercent: 41,
+            duration: 20,
             repeat: -1,
             yoyo: true,
             ease: "power",

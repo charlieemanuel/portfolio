@@ -13,7 +13,7 @@ const About = () => {
                 I’m a UI/UX Designer and Web Developer who loves turning ideas into interactive, visually engaging websites. With a strong eye for design and a passion for user experience, I blend creativity and logic to craft digital products that feel as good as they look. Whether it’s designing intuitive interfaces or coding responsive layouts, I’m dedicated to delivering high-quality work that meets both user needs and business goals. Let’s create something amazing together!
             </p>
         </div>
-        <div className="flex flex-col md:flex-row max-md:space-y-12 justify-around items-center mt-8">
+        <div className="flex flex-col md:flex-row max-md:space-y-12 justify-evenly items-center mt-8">
             <div className="flex flex-col justify-center items-center text-xl text-white font-bold rounded-xl max-w-[320px] h-full p-4 bg-gray-400/20 hover:scale-105 hover:shadow-md hover:shadow-gray-400/70 transition-all duration-300">
                 <img src={Design} alt="Picture" className='rounded-xl w-full h-full mb-4' />
                 <p>Design!</p>
