@@ -4,7 +4,7 @@ import Chill from '../images/chill.jpg'
 
 const About = () => {
   return (
-    <section className="about-section p-8 bg-gradient-to-b from-[#a5a9b4]/50 to-[#0a0a0a]/50" id="about">
+    <section className="about-section py-20 px-2 bg-gradient-to-b from-[#a5a9b4]/50 to-[#0a0a0a]/50" id="about">
         <div className="flex flex-col justify-center items-center">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#0a0a0a] hero-shadow mt-7 mb-8">
                 About Me
@@ -14,15 +14,15 @@ const About = () => {
             </p>
         </div>
         <div className="flex flex-col md:flex-row max-md:space-y-12 justify-around items-center mt-8">
-            <div className="flex flex-col justify-center items-center text-xl text-white font-bold rounded-xl max-w-[280px] h-full p-4 bg-gray-400/20 hover:scale-105 hover:shadow-md hover:shadow-gray-400/70 transition-all duration-300">
+            <div className="flex flex-col justify-center items-center text-xl text-white font-bold rounded-xl max-w-[320px] h-full p-4 bg-gray-400/20 hover:scale-105 hover:shadow-md hover:shadow-gray-400/70 transition-all duration-300">
                 <img src={Design} alt="Picture" className='rounded-xl w-full h-full mb-4' />
                 <p>Design!</p>
             </div>
-            <div className="flex flex-col justify-center items-center text-xl text-white font-bold rounded-xl max-w-[280px] h-full p-4 bg-gray-400/20 hover:scale-105 hover:shadow-md hover:shadow-gray-400/70 transition-all duration-300">
+            <div className="flex flex-col justify-center items-center text-xl text-white font-bold rounded-xl max-w-[320px] h-full p-4 bg-gray-400/20 hover:scale-105 hover:shadow-md hover:shadow-gray-400/70 transition-all duration-300">
                 <img src={Code} alt="Picture"  className='rounded-xl w-full h-full mb-4' />
                 <p>Code!</p>
             </div >
-            <div className="flex flex-col justify-center items-center text-xl text-white font-bold rounded-xl max-w-[280px] h-full p-4 bg-gray-400/20 hover:scale-105 hover:shadow-md hover:shadow-gray-400/70 transition-all duration-300">
+            <div className="flex flex-col justify-center items-center text-xl text-white font-bold rounded-xl max-w-[320px] h-full p-4 bg-gray-400/20 hover:scale-105 hover:shadow-md hover:shadow-gray-400/70 transition-all duration-300">
                 <img src={Chill} alt="Picture"  className='rounded-xl w-full h-full mb-4' />
                 <p>Chill!</p>
             </div >
