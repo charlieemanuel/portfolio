@@ -61,10 +61,10 @@ const Hero = () => {
   return (
     <section className='px-6 hero-image' id='home'>
         <div className="flex flex-col justify-end items-center pb-10 min-h-[calc(100vh-80px)] text-center px-4 py-5">
-            <div className='mb-7 bg-[gray]/20 backdrop-blur-[1px] border-4 border-[gray] rounded-4xl hidden' id='hero-profile'>
-                <img src={Image} alt="Profile" />
+            <div className='mb-7 bg-[gray]/20 backdrop-blur-[1px] border-4 border-[gray] rounded-md hidden' id='hero-profile'>
+                <img src={Image} alt="Profile" className='rounded-md' />
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-semibold text-[gray] hero-shadow mb-3 hero-title">Charlie Emanuel <span className='text-white'>Daga-as</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-semibold text-[gray] hero-shadow-sm md:hero-shadow mb-3 hero-title">Charlie Emanuel <span className='text-white'>Daga-as</span>
             </h1>
             <h2 className="text-xl sm:text-2xl md:text-3xl text-white font-semibold mb-5 tracking-tight hero-subTitle">
                 UI/UX Designer <span className='text-[gray] text-2xl md:text-3xl font-bold px-1'>+</span> Developer
