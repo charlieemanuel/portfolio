@@ -56,7 +56,7 @@ const Navbar = () => {
     })
 
     return (
-        <header className="w-full h-20 px-10 flex-center bg-gray-300/5 backdrop-blur-[2px] sticky top-0 z-50">
+        <header className="w-full h-20 px-10 flex-center  backdrop-blur-[3px] sticky top-0 z-50">
             <nav className="flex justify-between items-center w-full">
 
                 {/* logo */}
