@@ -1,10 +1,10 @@
 
 const Contact = () => {
   return (
-    <section className='flex flex-col py-20 px-6'>
+    <section className='flex flex-col py-20 px-6' id='contact'>
       <div>
-        <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#6e6e6e] hero-shadow mb-2">Let's Build Something Great</h2>
-        <p className="text-xl text-gray-400 font-bold">From sleek front-end builds to dynamic animations, I use modern tools like:</p>
+        <h2 className="text-2xl sm:text-3xl font-bold text-[gray] mb-2">Let's Build Something <span className='text-white'>Great</span></h2>
+        <p className="text-base text-white">Got an idea, collaboration, or opportunity in mind? Let’s connect and bring it to life. I’m always open to new challenges that let creativity and technology meet.</p>
       </div>
     </section>
   )

@@ -1,15 +1,13 @@
 @import "tailwindcss";
 
 * {
-    scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100dvw;
-  height: 100%;
   background-image: url(./assets/images/hero-bg.jpg);
   background-position: center;
   background-size: cover;
@@ -32,12 +30,12 @@ body {
   }
 }
 
-h1, h2 {
-  font-family: 'Epilogue', sans-serif;
+h1, h2, .logo {
+  font-family: 'Clash Grotesk', sans-serif;
 }
 
 h3, p, a {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Ranade', sans-serif;
 }
 
 @layer utilities {
@@ -60,6 +58,7 @@ h3, p, a {
   .hero-shadow {
     text-shadow: -1px 3px 1px #a6a6a6
   }
+
   .logo-wrapper {
       width: 100%;
       overflow: hidden;
