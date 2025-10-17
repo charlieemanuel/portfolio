@@ -13,7 +13,7 @@ const Hero = () => {
       scale: 1,
       opacity: 1,
       duration: 1,
-      ease: 'back',
+      ease:'back',
     })
 
     gsap.fromTo('.hero-title', {
@@ -23,6 +23,7 @@ const Hero = () => {
       y:0,
       opacity: 1,
       delay: 0.5,
+      ease: 'power1.inOut'
     })
 
     gsap.fromTo('.hero-subTitle', {
@@ -32,6 +33,7 @@ const Hero = () => {
       y:0,
       opacity: 1,
       delay: 0.7,
+      ease: 'power1.inOut'
     })
 
     gsap.fromTo('.hero-text', {
@@ -41,6 +43,7 @@ const Hero = () => {
       y:0,
       opacity: 1,
       delay: 0.9,
+      ease: 'power1.inOut'
     })
 
     gsap.fromTo('.hero-cta', {
@@ -50,6 +53,7 @@ const Hero = () => {
       y:0,
       opacity: 1,
       delay: 1.1,
+      ease: 'power1.inOut'
     })
   })
 

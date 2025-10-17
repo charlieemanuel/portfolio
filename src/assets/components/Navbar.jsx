@@ -17,8 +17,19 @@ const Navbar = () => {
       }, {
         x: 0,
         opacity: 1,
-        ease: 'power1.in',
+        ease: 'elastic.inOut',
         duration: 1,
+      })
+
+      gsap.fromTo('.sm-menuBtn', {
+        x: 100,
+        opacity: 0,
+      }, {
+        x: 0,
+        opacity: 1,
+        ease: 'elastic.inOut',
+        duration: 1,
+        delay: 0.5,
       })
 
       gsap.fromTo('.nav-menu', {
@@ -33,13 +44,13 @@ const Navbar = () => {
         stagger: 0.1,
       })
 
-      gsap.fromTo('.lg-nav-button', {
+      gsap.fromTo('.lg-nav-button ', {
         x: 100,
         opacity: 0,
       }, {
         x: 0,
         opacity: 1,
-        ease: 'power1.in',
+        ease: 'elastic.inOut',
         duration: 1,
       })
     })
@@ -68,7 +79,7 @@ const Navbar = () => {
                 </div>
 
                 {}{/* hamburger icon */}
-                <div onClick={handleNav} className="md:hidden z-10 text-white cursor-pointer hover:text-[gray] transition-all duration-300">
+                <div onClick={handleNav} className="md:hidden z-10 text-[gray] cursor-pointer hover:text-[gray] transition-all duration-300 sm-menuBtn">
                     {isOpen ? <HiOutlineX size={25}/> : <HiOutlineMenuAlt3 size={25}/>}
                 </div>
                 
