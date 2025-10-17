@@ -60,7 +60,7 @@ const Navbar = () => {
             <nav className="flex justify-between items-center w-full">
 
                 {/* logo */}
-                <div className='flex justify-center items-center border-white rounded-full py-4 px-2 logo'>
+                <div className='flex justify-center items-center border-white rounded-full py-4 px-2 hover:scale-110 transition-all duration-300'>
                 <a href="#" className="text-[gray] text-3xl font-bold tracking-wider logo">cm<span className="text-white">l</span>.</a>
                 </div>
 
