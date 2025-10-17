@@ -22,13 +22,14 @@ const Navbar = () => {
       })
 
       gsap.fromTo('.nav-menu', {
-        y: -200,
+        y: -70,
         opacity: 0,
       }, {
         y: 0,
         opacity: 1,
-        ease: 'power1',
-        duration: 1,
+        ease: 'power1.in',
+        duration: 0.8,
+        delay: 0.3,
         stagger: 0.1,
       })
 

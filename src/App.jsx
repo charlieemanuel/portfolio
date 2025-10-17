@@ -3,6 +3,7 @@ import Hero from './assets/components/Hero'
 import Navbar from './assets/components/Navbar'
 import Skills from './assets/components/Skills'
 import Portfolio from "./assets/components/Portfolio.jsx";
+import Contact from "./assets/components/Contact.jsx";
 const App = () => {
   return (
     <main>
@@ -11,6 +12,7 @@ const App = () => {
       <About />
       <Skills />
       <Portfolio />
+      <Contact />
     </main>
   )
 }
