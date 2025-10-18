@@ -35,7 +35,7 @@ h1, h2, .logo {
   font-family: 'Clash Grotesk', sans-serif;
 }
 
-h3, p, a {
+h3, p, a, input, textarea {
   font-family: 'Ranade', sans-serif;
 }
 
