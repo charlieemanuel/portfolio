@@ -21,7 +21,7 @@ const Contact = () => {
 
           {/*====== Email & Text Input ======*/}
           <div className='w-full space-y-4'>
-            <input type="text" id="fname" name="fname" placeholder="Email" required={true} className="border-b-2 w-full h-12 p-3 outline-none"/><br/>
+            <input type="email" id="fname" name="fname" placeholder="Email" required={true} className="border-b-2 w-full h-12 p-3 outline-none"/><br/>
             <input type="text" id="fname" name="fname" placeholder="Subject" required={true} className="border-b-2 w-full h-12 p-3 outline-none"/><br/>
             <textarea id="message" name="message" rows="6" cols="20" placeholder="Message" required={true} className='border-2 mt-2 w-full p-3 rounded-sm outline-none'></textarea>
           </div>
