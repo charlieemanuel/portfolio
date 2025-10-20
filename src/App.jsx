@@ -4,6 +4,7 @@ import Navbar from './assets/components/Navbar'
 import Skills from './assets/components/Skills'
 import Projects from "./assets/components/Projects.jsx";
 import Contact from "./assets/components/Contact.jsx";
+import Footer from "./assets/components/Footer.jsx";
 const App = () => {
   return (
     <main>
@@ -13,6 +14,7 @@ const App = () => {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </main>
   )
 }

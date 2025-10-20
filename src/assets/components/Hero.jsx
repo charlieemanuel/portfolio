@@ -64,7 +64,7 @@ const Hero = () => {
             <div className='mb-7 bg-[gray]/20 backdrop-blur-[1px] border-4 border-[gray] rounded-md hidden' id='hero-profile'>
                 <img src={Image} alt="Profile" className='rounded-md' />
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-semibold text-[gray] hero-shadow-sm md:hero-shadow mb-3 hero-title">Charlie Emanuel <span className='text-white'>Daga-as</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-[gray] hero-shadow-sm md:hero-shadow mb-3 hero-title">Charlie Emanuel <span className='text-white'>Daga-as</span>
             </h1>
             <h2 className="text-xl sm:text-2xl md:text-3xl text-white font-semibold mb-5 tracking-tight hero-subTitle">
                 UI/UX Designer <span className='text-[gray] text-2xl md:text-3xl font-bold px-1'>+</span> Developer
