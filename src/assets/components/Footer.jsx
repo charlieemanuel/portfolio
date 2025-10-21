@@ -27,10 +27,10 @@ const Footer = () => {
       <div className='flex flex-col-reverse md:flex-row justify-between mt-8 gap-y-8'>
         <p>2025 © Charlie Emanuel Daga-as - All rights reserved.</p>
         <div className='flex flex-row justify-center items-center space-x-5'>
-          <a href='https://web.facebook.com/people/Charlie-Emnl-Daga-as/pfbid0WmiXtNjyQ43GL5oBY81S7tQUJ9jo8485PZpx797XeipiFzaghzyrpyKX25yWzpTAl/'>< BsFacebook className='h-5 w-5'/></a>
-          <a href='#'>< BsInstagram className='h-5 w-5'/></a>
-          <a href='#'>< BsLinkedin className='h-5 w-5'/></a>
-          <a href='https://github.com/charlieemanuel'>< BsGithub className='h-5 w-5'/></a>
+          <a href='https://web.facebook.com/people/Charlie-Emnl-Daga-as/pfbid0WmiXtNjyQ43GL5oBY81S7tQUJ9jo8485PZpx797XeipiFzaghzyrpyKX25yWzpTAl/'>< BsFacebook size={18}/></a>
+          <a href='#'>< BsInstagram size={18}/></a>
+          <a href='#'>< BsLinkedin size={18}/></a>
+          <a href='https://github.com/charlieemanuel'>< BsGithub size={18}/></a>
         </div>
       </div>
     </footer>
