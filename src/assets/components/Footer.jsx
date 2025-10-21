@@ -1,5 +1,6 @@
 import { BsEnvelopeAtFill, BsTelephoneFill, BsFacebook, BsInstagram, BsLinkedin, BsGithub } from 'react-icons/bs';
 import { FaLocationDot } from 'react-icons/fa6';
+import { motion } from "framer-motion";
 
 
 const Footer = () => {
@@ -10,21 +11,21 @@ const Footer = () => {
           <p>Creating exceptional digital experiences through innovative design and development. Let's build something amazing together.</p>
         </div>
         <div className='flex flex-col justify-center'>
-          <h2 className='text-lg font-bold'><span className='text-black'>Quick</span> Links</h2>
+          <h2 className='text-base font-bold'><span className='text-black'>Quick</span> Links</h2>
           <a href='#about'>About</a>
           <a href='#skills'>Skills</a>
           <a href='#projects'>Projects</a>
           <a href='#contact'>Contact</a>
         </div>
         <div>
-          <h2 className='text-lg font-bold'><span className='text-black'>Contact</span> Info</h2>
+          <h2 className='text-base font-bold'><span className='text-black'>Contact</span> Info</h2>
           <p className='flex items-center gap-2'><BsTelephoneFill /> +63-931-8481-732</p>
           <p className='flex items-center gap-2'><BsEnvelopeAtFill /> charlieemanuel18@gmail.com</p>
           <p className='flex items-center gap-2'><FaLocationDot /> City of Naga Cebu, Philippines</p>
         </div>
       </div>
       <div className='flex flex-col-reverse md:flex-row justify-between mt-8 gap-y-8'>
-        <p>2025 © Charlie Emanuel Daga-as - All right reserved.</p>
+        <p>2025 © Charlie Emanuel Daga-as - All rights reserved.</p>
         <div className='flex flex-row justify-center items-center space-x-5'>
           <a href='https://web.facebook.com/people/Charlie-Emnl-Daga-as/pfbid0WmiXtNjyQ43GL5oBY81S7tQUJ9jo8485PZpx797XeipiFzaghzyrpyKX25yWzpTAl/'>< BsFacebook className='h-5 w-5'/></a>
           <a href='#'>< BsInstagram className='h-5 w-5'/></a>

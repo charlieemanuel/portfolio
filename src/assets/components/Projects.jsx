@@ -1,7 +1,9 @@
-import { BiDownload, BiPlay } from 'react-icons/bi';
+import { TbExternalLink } from 'react-icons/tb';
+import { BsGithub } from 'react-icons/bs';
 import One from '../images/one.jpg';
 import Two from '../images/two.jpg';
 import Three from '../images/three.jpg';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
   return (
@@ -24,15 +26,15 @@ const Projects = () => {
               <p className='text-base text-white font-normal ">'>
                 A comprehensive website solution featuring advanced functionality, real-time API, and seamless support experience with 55% improved conversion rates.
               </p>
-              <div className='text-base font-semibold flex items-center justify-between w-full">'>
-                <a href='#' className='flex items-center justify-center space-x-2 text-white hover:text-[gray] transition-all duration-300'>
-                  <BiDownload size={20}/>
+              <div className='text-base font-semibold flex-col md:flex-row flex items-center justify-between max-sm:space-y-3 w-full'>
+                <motion.a whileTap={{scale: 0.9}} href='#' className='flex items-center justify-center space-x-2 text-white hover:text-[gray] transition-all duration-300'>
+                  <TbExternalLink/>
                   <span>View Project</span>
-                </a>
-                <a href='#' className='flex items-center justify-center space-x-2 text-white hover:text-[gray] transition-all duration-300'>
-                  <BiDownload size={20}/>
+                </motion.a>
+                <motion.a whileTap={{scale: 0.9}} href='#' className='flex items-center justify-center space-x-2 text-white hover:text-[gray] transition-all duration-300'>
+                  <BsGithub/>
                   <span>Source Code</span>
-                </a>
+                </motion.a>
               </div>
             </div>
           </div >
@@ -45,15 +47,15 @@ const Projects = () => {
               <p className='text-base text-white font-normal ">'>
                 A comprehensive website solution featuring advanced functionality, real-time API, and seamless support experience with 55% improved conversion rates.
               </p>
-              <div className='text-base font-semibold flex items-center justify-between w-full">'>
-                <a href='#' className='flex items-center justify-center space-x-2 text-white hover:text-[gray] transition-all duration-300'>
-                  <BiDownload size={20}/>
+              <div className='text-base font-semibold flex-col md:flex-row flex items-center justify-between max-sm:space-y-3 w-full'>
+                <motion.a whileTap={{scale: 0.9}} href='#' className='flex items-center justify-center space-x-2 text-white hover:text-[gray] transition-all duration-300'>
+                  <TbExternalLink/>
                   <span>View Project</span>
-                </a>
-                <a href='#' className='flex items-center justify-center space-x-2 text-white hover:text-[gray] transition-all duration-300'>
-                  <BiDownload size={20}/>
+                </motion.a>
+                <motion.a whileTap={{scale: 0.9}} href='#' className='flex items-center justify-center space-x-2 text-white hover:text-[gray] transition-all duration-300'>
+                  <BsGithub/>
                   <span>Source Code</span>
-                </a>
+                </motion.a>
               </div>
             </div>
           </div >
@@ -66,15 +68,15 @@ const Projects = () => {
               <p className='text-base text-white font-normal ">'>
                 A comprehensive website solution featuring advanced functionality, real-time API, and seamless support experience with 55% improved conversion rates.
               </p>
-              <div className='text-base font-semibold flex items-center justify-between w-full">'>
-                <a href='#' className='flex items-center justify-center space-x-2 text-white hover:text-[gray] transition-all duration-300'>
-                  <BiDownload size={20}/>
+              <div className='text-base font-semibold flex-col md:flex-row flex items-center justify-between max-sm:space-y-3 w-full'>
+                <motion.a whileTap={{scale: 0.9}} href='#' className='flex items-center justify-center space-x-2 text-white hover:text-[gray] transition-all duration-300'>
+                  <TbExternalLink/>
                   <span>View Project</span>
-                </a>
-                <a href='#' className='flex items-center justify-center space-x-2 text-white hover:text-[gray] transition-all duration-300'>
-                  <BiDownload size={20}/>
+                </motion.a>
+                <motion.a whileTap={{scale: 0.9}} href='#' className='flex items-center justify-center space-x-2 text-white hover:text-[gray] transition-all duration-300'>
+                  <BsGithub/>
                   <span>Source Code</span>
-                </a>
+                </motion.a>
               </div>
             </div>
           </div >

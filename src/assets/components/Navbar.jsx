@@ -2,6 +2,7 @@ import { HiOutlineX, HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { useState } from 'react';
 import {useGSAP} from "@gsap/react";
 import  gsap from "gsap";
+import { motion } from 'framer-motion';
 
 
 const Navbar = () => {
@@ -74,9 +75,9 @@ const Navbar = () => {
                 </div>
 
                 {/* hire me btn */}
-                <div className='md:flex hidden lg-nav-button'>
-                    <a href="#" className="px-10 py-2 text-base bg-gradient-to-t from-[#a5a9b4] to-[#0a0a0a] text-white font-semibold border-[1px] border-[gray] rounded-sm flex items-center space-x-2 hover:from-[#0a0a0a00] hover:to-[#a5a9b400] hover:text-[gray] hover:border-[1px] hover:border-[gray] hover:scale-105 transition-all duration-300">Hire Me</a>
-                </div>
+                <motion.div whileTap={{scale: 0.9}} className='md:flex hidden lg-nav-button'>
+                      <a href="#contact" className="px-10 py-2 text-base bg-gradient-to-t from-[#a5a9b4] to-[#0a0a0a] text-white font-semibold border-[1px] border-[gray] rounded-sm flex items-center space-x-2 hover:from-[#0a0a0a00] hover:to-[#a5a9b400] hover:text-[gray] hover:border-[1px] hover:border-[gray] hover:scale-105 transition-all duration-300">Hire Me</a>
+                </motion.div>
 
                 {}{/* hamburger icon */}
                 <div onClick={handleNav} className="md:hidden z-10 text-[gray] cursor-pointer hover:text-[gray] transition-all duration-300 sm-menuBtn">
@@ -101,9 +102,9 @@ const Navbar = () => {
                         <a href="#contact" className="text-white text-sm hover:text-[gray] transition-all duration-300 ">CONTACT</a>
                     </button>
                     <hr className="border-[gray] w-[80%] m-8"/>
-                    <button className="px-10 py-2 text-base bg-gradient-to-t from-[#a5a9b4] to-[#0a0a0a] text-white font-semibold border-[1px] border-[gray] rounded-sm flex items-center space-x-2 hover:from-[#0a0a0a00] hover:to-[#a5a9b400] hover:text-[gray] hover:border-[1px] hover:border-[gray] hover:scale-105 transition-all duration-300 m-8" onClick={handleNav}>
-                        <a href="#">Hire Me</a>
-                    </button>
+                    <motion.button whileTap={{scale: 0.9}} className="px-10 py-2 text-base bg-gradient-to-t from-[#a5a9b4] to-[#0a0a0a] text-white font-semibold border-[1px] border-[gray] rounded-sm flex items-center space-x-2 hover:from-[#0a0a0a00] hover:to-[#a5a9b400] hover:text-[gray] hover:border-[1px] hover:border-[gray] hover:scale-105 transition-all duration-300 m-8" onClick={handleNav}>
+                          <a href="#contact">Hire Me</a>
+                    </motion.button>
                 </div>
             </nav>
         </header>

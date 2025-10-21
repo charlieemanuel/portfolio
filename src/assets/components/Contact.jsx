@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
@@ -27,7 +28,7 @@ const Contact = () => {
           </div>
 
           {/*====== Submit Button ======*/}
-          <button type="submit" className="flex justify-center w-full h-12 p-3 bg-gradient-to-t from-[#a5a9b4] to-[#0a0a0a] text-white font-bold border-[1px] border-[gray] rounded-sm items-center space-x-2 hover:from-[#0a0a0a00] hover:to-[#a5a9b400] hover:text-[gray] hover:border-[gray] hover:scale-105 transition-all duration-300">Submit</button>
+          <motion.button whileTap={{scale: 0.9}} type="submit" className="flex justify-center w-full h-12 p-3 bg-gradient-to-t from-[#a5a9b4] to-[#0a0a0a] text-white font-bold border-[1px] border-[gray] rounded-sm items-center space-x-2 hover:from-[#0a0a0a00] hover:to-[#a5a9b400] hover:text-[gray] hover:border-[gray] hover:scale-[1.02] transition-all duration-300">Submit</motion.button>
         </form>
       </div>
     </section>
