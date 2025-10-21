@@ -1,18 +1,52 @@
 import Design from '../images/design.jpg'  
 import Code from '../images/code.jpg'
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger, {})
 
 const About = () => {
+  useGSAP(() => {
+    gsap.fromTo('.about-text', {
+      x: '-100',
+      opacity: 0,
+    }, {
+      x: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: '.about-text',
+        start: 'top bottom',
+        end: 'top 50%',
+        scrub: 2,
+      }
+    })
+
+    gsap.fromTo('.about-image', {
+      y: 200,
+      opacity: 0,
+    }, {
+      y: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: '.about-image',
+        start: 'top bottom',
+        end: 'top 50%',
+        scrub: 2,
+      }
+    })
+  })
+
   return (
     <section className="about-section py-20 px-6 bg-[gray]/60" id="about">
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center about-text">
           <h2 className="w-full text-2xl sm:text-3xl font-semibold text-black mb-8">
             Crafting Digital <span className='text-white'> Experiences</span>
           </h2>
-          <p className=" flex justify-center w-full text-center text-base text-white px-5 py-20 rounded-sm leading-loose bg-[#0a0a0a]/75 hover:scale-[1.01] hover:shadow-md hover:shadow-white/50 transition-all duration-300">
+          <p className=" flex justify-center w-full text-center text-base text-white px-5 py-5 md:py-20 rounded-sm leading-loose bg-[#0a0a0a]/75 hover:scale-[1.01] hover:shadow-md hover:shadow-white/50 transition-all duration-300">
               I’m a UI/UX Designer and Web Developer who loves turning ideas into interactive, visually engaging websites. With a strong eye for design and a passion for user experience, I blend creativity and logic to craft digital products that feel as good as they look. Whether it’s designing intuitive interfaces or coding responsive layouts, I’m dedicated to delivering high-quality work that meets both user needs and business goals. Let’s create something amazing together!
           </p>
         </div>
-        <div className="flex flex-col md:flex-row max-md:space-y-12 justify-between items-center mt-8">
+        <div className="flex flex-col md:flex-row max-md:space-y-12 justify-between items-center mt-8 about-image">
             <div className="flex flex-col justify-center items-center text-xl text-white font-bold rounded-sm md:max-w-[49%] p-3 bg-[#0a0a0a]/75 hover:scale-[1.01] hover:shadow-md hover:shadow-white/50 transition-all duration-300">
                 <img src={Design} alt="Picture" className='rounded-sm w-full h-full' />
             </div>

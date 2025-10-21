@@ -1,9 +1,29 @@
 import { motion } from "framer-motion";
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger, {})
 
 const Contact = () => {
+  useGSAP(() => {
+    gsap.fromTo('.form', {
+      y: 200,
+      opacity: 0,
+    }, {
+      y: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: '.form',
+        start: 'top bottom',
+        end: 'top 50%',
+        scrub: 2,
+      }
+    })
+  })
+
   return (
     <section className='flex flex-col lg:flex-row max-md:justify-center max-md:items-center py-20 px-6' id='contact'>
-      <div className=' md:flex flex-col justify-center items-center rpx-2 w-full'>
+      <div className=' md:flex flex-col justify-center items-center rpx-2 w-full form'>
         <h2 className="text-2xl text-center sm:text-3xl md:text-4xl font-semibold text-[gray] mb-2">Let's Build Something <span
             className='text-white'>Great</span></h2>
         <p className="text-base text-white text-center">Got an idea, collaboration, or opportunity in mind? Let’s connect and bring

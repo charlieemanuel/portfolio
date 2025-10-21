@@ -1,5 +1,3 @@
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
 import JSlogo from '../logos/javascript-1.svg';
 import HTMLlogo from '../logos/html-1.svg';
 import CSSlogo from '../logos/css-3.svg';
@@ -9,9 +7,26 @@ import GSAPlogo from '../logos/gsap-greensock.svg';
 import FramerMotionLogo from '../logos/framer-motion.svg';
 import GitLogo from '../logos/git-icon.svg';
 import FigmaLogo from '../logos/figma-icon.svg';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger, {})
 
 const Skills = () => {
     useGSAP(() => {
+        gsap.fromTo('.skills-text', {
+            x: -100,
+            opacity: 0,
+        }, {
+            x: 0,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: '.skills-text',
+                start: 'top bottom',
+                end: 'top 50%',
+                scrub: 2,
+            }
+        })
 
         gsap.fromTo('.logo-list', {
             xPercent: -39,
@@ -25,7 +40,7 @@ const Skills = () => {
     })
   return (
     <section className="flex flex-col py-20 px-6" id="skills">
-        <div className='flex flex-col flex-wrap'>
+        <div className='flex flex-col flex-wrap skills-text'>
             <h2 className="text-2xl sm:text-3xl font-semibold text-[gray] mb-2">My <span className='text-white'>Toolkit</span> </h2>
             <p className="text-base text-gray-400 ">From sleek front-end builds to dynamic animations, I use modern tools like:</p>
         </div>
@@ -87,7 +102,7 @@ const Skills = () => {
                 </div>
             </div>
         </div>
-        <div>
+        <div className='skills-text'>
             <p className="text-base text-gray-400 mt-20">Every project is built for performance, beauty, and scalability.</p>
         </div>
     </section>

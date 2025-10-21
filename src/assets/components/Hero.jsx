@@ -65,12 +65,12 @@ const Hero = () => {
             <div className='mb-3 md:mb-7 bg-[gray]/20 backdrop-blur-[1px] border-4 border-[gray] rounded-md hidden' id='hero-profile'>
                 <img src={Image} alt="Profile" className='rounded-md' />
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-[gray] hero-shadow-sm md:hero-shadow mb-1 md:mb-3 hero-title max-sm:leading-8">Charlie Emanuel <span className='text-white'>Daga-as</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-[gray] hero-shadow-sm md:hero-shadow mb-1 md:mb-3 hero-title max-sm:leading-9">Charlie Emanuel <span className='text-white'>Daga-as</span>
             </h1>
             <h2 className="text-xl sm:text-2xl md:text-3xl text-white font-semibold mb:2 md:mb-5 tracking-tight hero-subTitle">
                 UI/UX Designer <span className='text-[gray] text-2xl md:text-3xl font-bold px-1'>+</span> Developer
             </h2>
-            <p className="text-base text-white max-w-2xl leading-relaxed hero-text">
+            <p className="text-base text-white max-w-2xl leading-tight md:leading-relaxed hero-text">
                 I'm a passionate UI/UX designer and developer dedicated to crafting visually stunning and user-friendly digital experiences.
             </p>
             <div className='flex flex-col sm:flex-row justify-center items-center md:mt-1 hero-cta'>

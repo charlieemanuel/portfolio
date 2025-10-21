@@ -1,9 +1,27 @@
 import { BsEnvelopeAtFill, BsTelephoneFill, BsFacebook, BsInstagram, BsLinkedin, BsGithub } from 'react-icons/bs';
 import { FaLocationDot } from 'react-icons/fa6';
-import { motion } from "framer-motion";
-
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger, {})
 
 const Footer = () => {
+  useGSAP(() => {
+    gsap.fromTo('footer', {
+      y: 50,
+      opacity: 0,
+    }, {
+      y: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: 'footer',
+        start: 'top bottom',
+        end: 'top 70%',
+        scrub: 2,
+      }
+    })
+  })
+
   return (
     <footer className='flex flex-col justify-center py-10 px-10 bg-[gray]/60 text-white'>
       <div className='flex flex-col md:flex-row max-md:space-y-5 justify-between'>
