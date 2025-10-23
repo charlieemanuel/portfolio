@@ -75,13 +75,13 @@ const Hero = () => {
             </p>
             <div className='flex flex-col sm:flex-row justify-center items-center md:mt-1 hero-cta'>
             <motion.button whileTap={{scale: 0.9}}>
-                <a href="#" className="mt-4 px-6 py-3 h-12 bg-gradient-to-t from-[#a5a9b4] to-[#0a0a0a] text-white font-bold border-[1px] border-[gray] rounded-sm flex items-center space-x-2 hover:from-[#0a0a0a00] hover:to-[#a5a9b400] hover:text-[gray] hover:border-[gray] hover:scale-105 transition-all duration-300">
+                <a href="/portfolio/src/cv/me-yellow.jpg" className="mt-4 px-6 py-3 h-12 bg-gradient-to-t from-[#a5a9b4] to-[#0a0a0a] text-white font-bold border-[1px] border-[gray] rounded-sm flex items-center space-x-2 hover:from-[#0a0a0a00] hover:to-[#a5a9b400] hover:text-[gray] hover:border-[gray] hover:scale-105 transition-all duration-300">
                     <BiDownload size={20}/>
                     <span>Download CV</span>
                 </a>
             </motion.button>
             <motion.button whileTap={{scale: 0.9}}>
-                <a href="#" className="mt-4 sm:ml-4 px-6 py-3 h-12 border-[1px] border-[gray] text-[gray] font-bold rounded-sm flex items-center space-x-2 hover:bg-gradient-to-t hover:from-[#a5a9b4] hover:to-[#0a0a0a] hover:text-white hover:scale-105 transition-all duration-300">
+                <a href="#projects" className="mt-4 sm:ml-4 px-6 py-3 h-12 border-[1px] border-[gray] text-[gray] font-bold rounded-sm flex items-center space-x-2 hover:bg-gradient-to-t hover:from-[#a5a9b4] hover:to-[#0a0a0a] hover:text-white hover:scale-105 transition-all duration-300">
                     <BiPlay size={25}/>
                     <span>See My Work</span>
                 </a>
